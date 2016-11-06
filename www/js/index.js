@@ -38,7 +38,8 @@ var app = {
         //ref.addEventListener('loadstart', function (event) { alert('start: ' + event.url); });
         //ref.addEventListener('loadstop', function (event) { alert('stop: ' + event.url); });
         //ref.addEventListener('loaderror', function (event) { alert('error: ' + event.message); });
-        //ref.addEventListener('exit', function (event) { alert(event.type); });
+        ref.addEventListener('exit', function (event) { navigator.app.exitApp(); });
+        
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
