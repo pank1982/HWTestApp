@@ -34,7 +34,8 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         //app.receivedEvent('deviceready');
-        var ref = window.open('https://elearning.tameen.ae/', '_top', 'location=no');
+        //var ref = window.open('https://elearning.tameen.ae/', '_top', 'location=no');
+        ChromeLauncher.open('https://elearning.tameen.ae/');
         //ref.addEventListener('loadstart', function (event) { alert('start: ' + event.url); });
         //ref.addEventListener('loadstop', function (event) { alert('stop: ' + event.url); });
         //ref.addEventListener('loaderror', function (event) { alert('error: ' + event.message); });
