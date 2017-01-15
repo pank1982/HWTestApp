@@ -34,7 +34,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         //app.receivedEvent('deviceready');
-        window.open("http://elearning.trackls.com/elearning/nhdb/login.html", "_blank");
+        window.open("https://elearning..tameen.ae", "_blank");
         //ChromeLauncher.open('https://elearning.tameen.ae/');
         //ref.addEventListener('loadstart', function (event) { alert('start: ' + event.url); });
         //ref.addEventListener('loadstop', function (event) { alert('stop: ' + event.url); });

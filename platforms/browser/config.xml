@@ -6,7 +6,7 @@
     <feature name="Device">
         <param name="browser-package" value="Device" />
     </feature>
-    <name>HWTestApp</name>
+    <name>eLearning</name>
     <description>
         OIC eLearning - Oman Insurance Academy
     </description>
