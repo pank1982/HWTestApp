@@ -24,9 +24,9 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background:url(../img/elearn.png) no-repeat center top;
-    /*background-color:#E4E4E4;
-    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    /*background:url(../img/elearn.png) no-repeat center top;*/
+    background-color:#FFF;
+    /*background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
     background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
     background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
     background-image:-webkit-gradient(
@@ -49,15 +49,21 @@ body {
 /* Portrait layout (default) */
 .app {
     background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
-    position:absolute;             /* position in the center of the screen */
-    left:50%;
-    top:60%;
-    height:50px;                   /* text area height */
-    width:225px;                   /* text area width */
-    text-align:center;
-    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
+                 /* position in the center of the screen */
+    height:100px;               
+    width:190px;                
+    text-align:left;
+    /*padding:180px 0px 0px 0px;*/ 
+    margin:20px 0px 0px 10px; 
+}
+
+.elearn{
+    background:url(../img/eLearning.jpg) no-repeat center top; /* 170px x 200px */
+    height:100px;                   /* text area height */
+    width:155px;                   /* text area width */
+    text-align:right;
+    padding:0px 0px 0px 40px;
+    margin:20px 0px 0px 10px; 
 }
 
 /* Landscape layout (with min-width) */
@@ -70,6 +76,45 @@ body {
     }
 }
 
+
+.Rtable {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 3em 0;
+  padding: 0;
+  align-items:center;
+}
+.Rtable-cell {
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 100%;  // Default to full width
+  padding: 0.8em 1.2em;
+  overflow: hidden; // Or flex might break
+  list-style: none;
+  border: solid @bw white;
+  background: fade(slategrey,20%);
+  > h1, > h2, > h3, > h4, > h5, > h6 { margin: 0; }
+}
+
+/* Table column sizing
+================================== */
+.Rtable--1cols > .Rtable-cell  { width: 100%; }
+.Rtable--2cols > .Rtable-cell  { width: 50%; }
+.Rtable--3cols > .Rtable-cell  { width: 33.33%; }
+.Rtable--4cols > .Rtable-cell  { width: 25%; }
+.Rtable--5cols > .Rtable-cell  { width: 20%; }
+.Rtable--6cols > .Rtable-cell  { width: 16.6%; }
+
+
+
+
+
+
+
+
+.clear{
+    clear:both;
+}
 img {
     width: 100%;
     height: auto;
@@ -82,6 +127,8 @@ h1 {
     overflow:visible;
     padding:0px;
     text-align:center;
+    position:relative;
+    margin:300px 0 0 0;
 }
 
 .event {
